@@ -1,0 +1,27 @@
+/* ~/zephyrproject/zephyr/boards/xtensa/esp32 */
+/* ~/zephyrproject/zephyr/soc/xtensa/esp32/ */
+/* ~/zephyrproject/zephyr/dts/xtensa/espressif/esp32.dtsi */
+/* ~/zephyrproject/zephyr/include/dt-bindings/gpio/gpio.h */
+/* ~/zephyrproject/zephyr/drivers/gpio/gpio_esp32.c */
+/* ~/zephyrproject/zephyr/drivers/pinmux/pinmux_esp32.c */
+/* ~/zephyrproject/zephyr/dts/bindings/gpio/espressif,esp32-gpio.yaml */
+
+/* dts: https://docs.zephyrproject.org/latest/build/dts/index.html */
+/* pinmux: https://docs.opentitan.org/hw/ip/pinmux/doc/ */
+
+/ {
+  
+  aliases {
+    led0 = &led_blue_label;
+  };
+  /* Creando nodo para GPIO específico */
+  my_leds_node {
+    /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
+    compatible = "gpio-leds";
+    led_blue_label: led_blue_node {
+      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+    };
+  };
+};
+	
+	

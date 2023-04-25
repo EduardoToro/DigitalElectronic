@@ -1,0 +1,21 @@
+if WIFI
+
+config WIFI_SSID
+	string "WIFI SSID - Network name"
+	default "my_network"
+
+config WIFI_PSK
+	string "WIFI PSK - Network password key"
+	default "secret_passwd"
+
+endif # WIFI
+
+config IP_SERVER
+  string "IP_SERVER - IP donde se encuentra el servicio TCP"
+  default "192.168.1.1"
+
+config PORT_SERVER
+  int "PORT_SERVER - Puerto por el que se presta el servicio TCP"
+  default 3000
+
+source "Kconfig.zephyr"

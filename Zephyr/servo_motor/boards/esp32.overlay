@@ -1,0 +1,109 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Copyright (c) 2021 Andrei-Edward Popa
+ */
+
+/ {
+
+	aliases {
+	/* 	pwm-0 = &ledc0; */
+	/* 	pwm-led0 = &pwm_led_blue; */
+    /* servo = &servo0_label; */
+	};
+
+	servo0: servo0 {
+		compatible = "pwm-servo"; // Quiere decir que será compatible con el ../dts/bindings/pw-servo.yaml
+    /* A continuación se determina el tiempo en el cual
+    el servo_motor se ubica en una posición entre 0 a 180 grados
+    los cuales corresponden a 0.7 mS (min) hasta 2.5 mS (max) de los
+    20 mS que corresponden al perido */
+		pwms = <&ledc0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+		min-pulse = <PWM_USEC(700)>;
+		max-pulse = <PWM_USEC(2500)>;
+	};
+
+	servo1: servo1 {
+		compatible = "pwm-servo";
+		pwms = <&ledc0 1 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+		min-pulse = <PWM_USEC(700)>;
+		max-pulse = <PWM_USEC(2500)>;
+	};
+
+  /* ENLISTAR AQUÍ LOS DEMÁS NODOS QUE SE REQUIERAN PARA LOS DEMÁS CANALES DE SERVOMOTORES */
+  /* ... */
+
+};
+
+&pinctrl {
+	ledc0_default: ledc0_default {
+		group1 {
+      /* Este es un ejemplo de configuración, pero podrá obtener más opciones
+      de configuración de canales/gpios según la necesidad y según es observado
+      en el siguiente enlace:
+      https://github.com/zephyrproject-rtos/hal_espressif/blob/zephyr/include/dt-bindings/pinctrl/esp32-pinctrl.h
+      */
+			pinmux =
+      <LEDC_CH0_GPIO2>,
+      <LEDC_CH1_GPIO4>,
+      <LEDC_CH2_GPIO5>,
+      <LEDC_CH3_GPIO18>,
+      <LEDC_CH4_GPIO19>,
+      <LEDC_CH5_GPIO21>,
+      <LEDC_CH6_GPIO22>,
+      <LEDC_CH7_GPIO23>,
+      <LEDC_CH8_GPIO15>
+      /*... CH9, CH10, CH11, CH12, CH13, CH14, CH15. CONFIGURE MÁS CANALES (separados por comas) SIN SON REQUERIDOS CON LOS GPIOS */
+      ;
+			output-enable;
+		};
+	};
+};
+
+&ledc0 {
+	pinctrl-0 = <&ledc0_default>;
+	pinctrl-names = "default";
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+	channel0@0 {
+		reg = <0x0>;
+		timer = <0>;
+	};
+	channel1@1 {
+		reg = <0x1>;
+		timer = <0>;
+	};
+	channel2@2 {
+		reg = <0x2>;
+		timer = <0>;
+	};
+	channel3@3 {
+		reg = <0x3>;
+		timer = <0>;
+	};
+	channel4@4 {
+		reg = <0x4>;
+		timer = <0>;
+	};
+	channel5@5 {
+		reg = <0x5>;
+		timer = <0>;
+	};
+	channel6@6 {
+		reg = <0x6>;
+		timer = <0>;
+	};
+	channel7@7 {
+		reg = <0x7>;
+		timer = <0>;
+	};
+	channel8@8 {
+		reg = <0x8>;
+		timer = <0>;
+	};
+  /* Por cada canal/gpio configurado requerirá señalar
+  qué taimer y qué registro usar como se ve arriva.
+  Si requiere configurar más canales tenga presente
+  las configuraciones anteriores como guía. */
+};
