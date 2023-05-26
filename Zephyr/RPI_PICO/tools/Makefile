@@ -38,10 +38,10 @@ build:
 	west build -p auto -b $(BOARD) -- -DDTC_OVERLAY_FILE=$(DTS_OVERLAY) . || \
 		(echo "\nFalla la construcción del firmware\n")
 
-flash:
-	. ./environment.bash && \
-	west flash || \
-		(echo "\nNo fue posible flashear el dispositivo\n")
+# flash:
+# 	. ./environment.bash && \
+# 	west flash || \
+# 		(echo "\nNo fue posible flashear el dispositivo\n")
 
 terminal:
 	$(SERIALMONITOR) $(SERIAL) -b $(BAUD) || \
