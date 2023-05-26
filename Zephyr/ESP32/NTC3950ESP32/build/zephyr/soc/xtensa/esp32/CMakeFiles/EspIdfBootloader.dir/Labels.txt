@@ -1,0 +1,13 @@
+# Target labels
+ EspIdfBootloader
+# Source files and their labels
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/zephyr/soc/xtensa/esp32/CMakeFiles/EspIdfBootloader
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/zephyr/soc/xtensa/esp32/CMakeFiles/EspIdfBootloader.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/zephyr/soc/xtensa/esp32/CMakeFiles/EspIdfBootloader-complete.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-build.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-configure.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-download.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-install.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-mkdir.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-patch.rule
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/esp-idf/src/EspIdfBootloader-stamp/EspIdfBootloader-update.rule

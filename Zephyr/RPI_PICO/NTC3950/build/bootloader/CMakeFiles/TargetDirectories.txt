@@ -1,0 +1,3 @@
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/RPI_PICO/NTC3950/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/RPI_PICO/NTC3950/build/bootloader/CMakeFiles/edit_cache.dir
+/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/RPI_PICO/NTC3950/build/bootloader/CMakeFiles/rebuild_cache.dir

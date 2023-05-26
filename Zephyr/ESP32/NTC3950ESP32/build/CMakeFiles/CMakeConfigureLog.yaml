@@ -1,0 +1,1460 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      The target system is: Generic - 3.3.99 - xtensa
+      The host system is: Linux - 5.19.0-41-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find _vectors.o: No existe el archivo o el directorio
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find -lhandlers-sim: No existe el archivo o el directorio
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find -lhal: No existe el archivo o el directorio
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/3.26.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find _vectors.o: No existe el archivo o el directorio
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find -lhandlers-sim: No existe el archivo o el directorio
+      /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: cannot find -lhal: No existe el archivo o el directorio
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/3.26.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-espressif_esp32_zephyr-elf-gcc (Zephyr SDK 0.16.0) 12.2.0
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:144 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-lrT3ul"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-lrT3ul"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-lrT3ul
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_f98f8 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -o CMakeFiles/cmTC_f98f8.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-lrT3ul/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_f98f8.dir/src.c.obj -o cmTC_f98f8   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2053 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/linker_flags_template.cmake:11 (check_set_linker_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:37 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8OaqTR"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8OaqTR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0_"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8OaqTR
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_a946c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0_  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -o CMakeFiles/cmTC_a946c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8OaqTR/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_a946c.dir/src.c.obj -o cmTC_a946c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:29 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-90W2hg"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-90W2hg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wall_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-90W2hg
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_c40ac && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wall_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wall -o CMakeFiles/cmTC_c40ac.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-90W2hg/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_c40ac.dir/src.c.obj -o cmTC_c40ac   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:29 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-U7i4VG"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-U7i4VG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_security_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-U7i4VG
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_22532 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wformat__Wformat_security_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wformat -Wformat-security -o CMakeFiles/cmTC_22532.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-U7i4VG/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_22532.dir/src.c.obj -o cmTC_22532   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:29 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-35AasY"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-35AasY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_zero_length_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-35AasY
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_e9d74 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wformat__Wformat_zero_length_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wformat -Wformat-zero-length -o CMakeFiles/cmTC_e9d74.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-35AasY/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_e9d74.dir/src.c.obj -o cmTC_e9d74   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:29 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-5Uspr7"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-5Uspr7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wmain_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-5Uspr7
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_5162d && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wmain_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wmain -o CMakeFiles/cmTC_5162d.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-5Uspr7/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_5162d.dir/src.c.obj -o cmTC_5162d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:36 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-n3boni"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-n3boni"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_sign_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-n3boni
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_2f2dd && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wpointer_sign_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wpointer-sign -o CMakeFiles/cmTC_2f2dd.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-n3boni/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_2f2dd.dir/src.c.obj -o cmTC_2f2dd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:39 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Fe8kOb"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Fe8kOb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_arith_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Fe8kOb
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_e800c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wpointer_arith_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wpointer-arith -o CMakeFiles/cmTC_e800c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Fe8kOb/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_e800c.dir/src.c.obj -o cmTC_e800c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:42 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-dz7RNd"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-dz7RNd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wexpansion_to_defined_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-dz7RNd
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_615c9 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wexpansion_to_defined_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wexpansion-to-defined -o CMakeFiles/cmTC_615c9.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-dz7RNd/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_615c9.dir/src.c.obj -o cmTC_615c9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:52 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-6YVRCC"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-6YVRCC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wlogical_op_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-6YVRCC
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_17c8c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wlogical_op_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wlogical-op -o CMakeFiles/cmTC_17c8c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-6YVRCC/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_17c8c.dir/src.c.obj -o cmTC_17c8c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:52 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-DdbhbU"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-DdbhbU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wmissing_field_initializers_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-DdbhbU
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_6353e && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wmissing_field_initializers_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wmissing-field-initializers -o CMakeFiles/cmTC_6353e.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-DdbhbU/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_6353e.dir/src.c.obj -o cmTC_6353e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:67 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-nsghZY"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-nsghZY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpacked_bitfield_compat_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-nsghZY
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_14992 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wpacked_bitfield_compat_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wpacked-bitfield-compat -o CMakeFiles/cmTC_14992.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-nsghZY/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_14992.dir/src.c.obj -o cmTC_14992   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:67 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4ZiXuT"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4ZiXuT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wvla_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4ZiXuT
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_a290c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wvla_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wvla -o CMakeFiles/cmTC_a290c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4ZiXuT/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_a290c.dir/src.c.obj -o cmTC_a290c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:86 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-oQF5aT"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-oQF5aT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wunused_but_set_variable_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-oQF5aT
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_22542 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Wunused_but_set_variable_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Wunused-but-set-variable -o CMakeFiles/cmTC_22542.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-oQF5aT/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_22542.dir/src.c.obj -o cmTC_22542   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:88 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-wP2jFK"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-wP2jFK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Werror_implicit_int_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-wP2jFK
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_c3c9b && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_Werror_implicit_int_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -Werror=implicit-int -o CMakeFiles/cmTC_c3c9b.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-wP2jFK/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_c3c9b.dir/src.c.obj -o cmTC_c3c9b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:164 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-mdjLqe"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-mdjLqe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_mstack_protector_guard_global_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-mdjLqe
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_a310c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_mstack_protector_guard_global_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -mstack-protector-guard=global -o CMakeFiles/cmTC_a310c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-mdjLqe/src.c
+        FAILED: CMakeFiles/cmTC_a310c.dir/src.c.obj 
+        /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_mstack_protector_guard_global_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -mstack-protector-guard=global -o CMakeFiles/cmTC_a310c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-mdjLqe/src.c
+        xtensa-espressif_esp32_zephyr-elf-gcc: error: unrecognized command-line option '-mstack-protector-guard=global'; did you mean '-fstack-protector-all'?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:175 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-vQvPbU"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-vQvPbU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_freestanding_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-vQvPbU
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_187c8 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fno_freestanding_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fno-freestanding -o CMakeFiles/cmTC_187c8.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-vQvPbU/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_187c8.dir/src.c.obj -o cmTC_187c8   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:178 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-9NVYhN"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-9NVYhN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffreestanding_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-9NVYhN
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_2188a && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_ffreestanding_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -ffreestanding -o CMakeFiles/cmTC_2188a.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-9NVYhN/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_2188a.dir/src.c.obj -o cmTC_2188a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2129 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:185 (check_set_compiler_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:41 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-2AMwCy"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-2AMwCy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_gdwarf_4_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-2AMwCy
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_26b74 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_gdwarf_4_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -gdwarf-4 -o CMakeFiles/cmTC_26b74.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-2AMwCy/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_26b74.dir/src.c.obj -o cmTC_26b74   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2053 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:1 (check_set_linker_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-KJSSKL"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-KJSSKL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___print_memory_usage"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-KJSSKL
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_e1f8e && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___print_memory_usage  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--print-memory-usage -o CMakeFiles/cmTC_e1f8e.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-KJSSKL/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--print-memory-usage  CMakeFiles/cmTC_e1f8e.dir/src.c.obj -o cmTC_e1f8e   && :
+        Memory region         Used Size  Region Size  %age Used
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:2053 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/gcc/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:8 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/kernel.cmake:147 (include)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:123 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/etorob/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-stYrti"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-stYrti"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__pg"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-stYrti
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_abf28 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__pg  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -pg -o CMakeFiles/cmTC_abf28.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-stYrti/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -pg  CMakeFiles/cmTC_abf28.dir/src.c.obj -o cmTC_abf28   && :
+        FAILED: cmTC_abf28 
+        : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -pg  CMakeFiles/cmTC_abf28.dir/src.c.obj -o cmTC_abf28   && :
+        CMakeFiles/cmTC_abf28.dir/src.c.obj: in function `main':
+        src.c:(.text+0x7): dangerous relocation: call8: call target out of range: _mcount
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_base.cmake:13 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:327 (toolchain_ld_base)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Yq9XhU"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Yq9XhU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__no_pie"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Yq9XhU
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_3348f && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__no_pie  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -no-pie -o CMakeFiles/cmTC_3348f.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Yq9XhU/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -no-pie  CMakeFiles/cmTC_3348f.dir/src.c.obj -o cmTC_3348f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_base.cmake:18 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:327 (toolchain_ld_base)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-llg0YR"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-llg0YR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___gc_sections"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-llg0YR
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_73b80 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___gc_sections  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--gc-sections -o CMakeFiles/cmTC_73b80.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-llg0YR/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--gc-sections  CMakeFiles/cmTC_73b80.dir/src.c.obj -o cmTC_73b80   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_base.cmake:18 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:327 (toolchain_ld_base)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-h71ZAU"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-h71ZAU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___build_id_none"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-h71ZAU
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_16658 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___build_id_none  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--build-id=none -o CMakeFiles/cmTC_16658.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-h71ZAU/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--build-id=none  CMakeFiles/cmTC_16658.dir/src.c.obj -o cmTC_16658   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1662 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_base.cmake:25 (zephyr_ld_option_ifdef)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:327 (toolchain_ld_base)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-sBlv9B"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-sBlv9B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___sort_common_descending"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-sBlv9B
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_3a38e && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___sort_common_descending  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--sort-common=descending -o CMakeFiles/cmTC_3a38e.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-sBlv9B/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--sort-common=descending  CMakeFiles/cmTC_3a38e.dir/src.c.obj -o cmTC_3a38e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1662 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_base.cmake:25 (zephyr_ld_option_ifdef)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:327 (toolchain_ld_base)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-zCyi39"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-zCyi39"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___sort_section_alignment"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-zCyi39
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_a0838 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___sort_section_alignment  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--sort-section=alignment -o CMakeFiles/cmTC_a0838.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-zCyi39/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--sort-section=alignment  CMakeFiles/cmTC_a0838.dir/src.c.obj -o cmTC_a0838   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_baremetal.cmake:8 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:336 (toolchain_ld_baremetal)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-OOVFDw"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-OOVFDw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__nostdlib"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-OOVFDw
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_3577b && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__nostdlib  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -nostdlib -o CMakeFiles/cmTC_3577b.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-OOVFDw/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -nostdlib  CMakeFiles/cmTC_3577b.dir/src.c.obj -o cmTC_3577b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_baremetal.cmake:8 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:336 (toolchain_ld_baremetal)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZZ07t"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZZ07t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__static"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZZ07t
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_063d9 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__static  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -static -o CMakeFiles/cmTC_063d9.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZZ07t/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -static  CMakeFiles/cmTC_063d9.dir/src.c.obj -o cmTC_063d9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_baremetal.cmake:8 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:336 (toolchain_ld_baremetal)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LYmgI9"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LYmgI9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl__X"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LYmgI9
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_724b0 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl__X  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,-X -o CMakeFiles/cmTC_724b0.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LYmgI9/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,-X  CMakeFiles/cmTC_724b0.dir/src.c.obj -o cmTC_724b0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_baremetal.cmake:8 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:336 (toolchain_ld_baremetal)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bLGKsa"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bLGKsa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl__N"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bLGKsa
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_7f6d9 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl__N  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,-N -o CMakeFiles/cmTC_7f6d9.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bLGKsa/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,-N  CMakeFiles/cmTC_7f6d9.dir/src.c.obj -o cmTC_7f6d9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1968 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:126 (target_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/linker/ld/target_baremetal.cmake:30 (zephyr_ld_options)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:336 (toolchain_ld_baremetal)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-iwQe3a"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-iwQe3a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___orphan_handling_warn"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-iwQe3a
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_2f014 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__Wl___orphan_handling_warn  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--orphan-handling=warn -o CMakeFiles/cmTC_2f014.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-iwQe3a/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -Wl,--orphan-handling=warn  CMakeFiles/cmTC_2f014.dir/src.c.obj -o cmTC_2f014   && :
+        /home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld: warning: orphan section `.xtensa.info' from `CMakeFiles/cmTC_2f014.dir/src.c.obj' being placed in section `.xtensa.info'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:386 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-P4BF4K"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-P4BF4K"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_asynchronous_unwind_tables_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-P4BF4K
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_0df09 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fno_asynchronous_unwind_tables_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fno-asynchronous-unwind-tables -o CMakeFiles/cmTC_0df09.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-P4BF4K/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_0df09.dir/src.c.obj -o cmTC_0df09   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:414 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4TJbKQ"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4TJbKQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_reorder_functions_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4TJbKQ
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_38126 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fno_reorder_functions_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fno-reorder-functions -o CMakeFiles/cmTC_38126.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-4TJbKQ/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_38126.dir/src.c.obj -o cmTC_38126   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:421 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bd8FHK"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bd8FHK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check__param_min_pagesize_0_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bd8FHK
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_b87f6 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck__param_min_pagesize_0_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   --param=min-pagesize=0 -o CMakeFiles/cmTC_b87f6.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-bd8FHK/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_b87f6.dir/src.c.obj -o cmTC_b87f6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:424 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-RwV5yY"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-RwV5yY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_defer_pop_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-RwV5yY
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_d9f32 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fno_defer_pop_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fno-defer-pop -o CMakeFiles/cmTC_d9f32.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-RwV5yY/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_d9f32.dir/src.c.obj -o cmTC_d9f32   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:443 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-3uwuKY"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-3uwuKY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_etorob_Documentos_GitHub_DigitalElectronic_Zephyr_NTC3950ESP32_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-3uwuKY
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_b1be6 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fmacro_prefix_map__home_etorob_Documentos_GitHub_DigitalElectronic_Zephyr_NTC3950ESP32_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fmacro-prefix-map=/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32=CMAKE_SOURCE_DIR -o CMakeFiles/cmTC_b1be6.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-3uwuKY/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_b1be6.dir/src.c.obj -o cmTC_b1be6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:444 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-eoklQO"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-eoklQO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_etorob_zephyrproject_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-eoklQO
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_272ba && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fmacro_prefix_map__home_etorob_zephyrproject_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fmacro-prefix-map=/home/etorob/zephyrproject/zephyr=ZEPHYR_BASE -o CMakeFiles/cmTC_272ba.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-eoklQO/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_272ba.dir/src.c.obj -o cmTC_272ba   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/CMakeLists.txt:446 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZwTeu"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZwTeu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_etorob_zephyrproject_WEST_TOPDIR_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZwTeu
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_de698 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fmacro_prefix_map__home_etorob_zephyrproject_WEST_TOPDIR_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fmacro-prefix-map=/home/etorob/zephyrproject=WEST_TOPDIR -o CMakeFiles/cmTC_de698.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-LZwTeu/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_de698.dir/src.c.obj -o cmTC_de698   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/arch/common/CMakeLists.txt:20 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8j5Qah"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8j5Qah"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffunction_sections_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8j5Qah
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_2150c && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_ffunction_sections_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -ffunction-sections -o CMakeFiles/cmTC_2150c.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-8j5Qah/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_2150c.dir/src.c.obj -o cmTC_2150c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/arch/common/CMakeLists.txt:20 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-S7ULQ9"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-S7ULQ9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fdata_sections_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-S7ULQ9
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_011e0 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_fdata_sections_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -fdata-sections -o CMakeFiles/cmTC_011e0.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-S7ULQ9/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_011e0.dir/src.c.obj -o cmTC_011e0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1907 (check_c_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1079 (check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1946 (zephyr_check_compiler_flag)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:1922 (target_cc_option_fallback)"
+      - "/home/etorob/zephyrproject/zephyr/cmake/modules/extensions.cmake:117 (target_cc_option)"
+      - "/home/etorob/zephyrproject/zephyr/arch/xtensa/core/CMakeLists.txt:3 (zephyr_cc_option)"
+    directories:
+      source: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Gvuq1g"
+      binary: "/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Gvuq1g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/etorob/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_mlongcalls_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0"
+      cached: true
+      stdout: |
+        Change Dir: /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Gvuq1g
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_75c13 && [1/2] /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -Dcheck_mlongcalls_C__nostartfiles__nostdlib__isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_etorob_zephyr_sdk_0_16_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0  -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0   -mlongcalls -o CMakeFiles/cmTC_75c13.dir/src.c.obj -c /home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/NTC3950ESP32/build/CMakeFiles/CMakeScratch/TryCompile-Gvuq1g/src.c
+        [2/2] : && /home/etorob/zephyr-sdk/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -nostartfiles -nostdlib -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include" -isystem "/home/etorob/zephyr-sdk-0.16.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0  CMakeFiles/cmTC_75c13.dir/src.c.obj -o cmTC_75c13   && :
+        
+      exitCode: 0
+...

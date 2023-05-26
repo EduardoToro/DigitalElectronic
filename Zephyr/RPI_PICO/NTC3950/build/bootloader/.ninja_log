@@ -1,0 +1,7 @@
+# ninja log v5
+0	15	1684990622152477685	CMakeFiles/boot_stage2.dir/home/etorob/zephyrproject/modules/hal/rpi_pico/src/rp2_common/boot_stage2/boot2_w25q080.S.obj	30ea99fee08001d4
+15	48	1684990622184477336	boot_stage2	5efc2e395ce1d77d
+15	48	1684990622184477336	boot_stage2.bin	5efc2e395ce1d77d
+15	48	1684990622184477336	boot_stage2.S	5efc2e395ce1d77d
+15	48	1684990622184477336	/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/RPI_PICO/NTC3950/build/bootloader/boot_stage2.bin	5efc2e395ce1d77d
+15	48	1684990622184477336	/home/etorob/Documentos/GitHub/DigitalElectronic/Zephyr/RPI_PICO/NTC3950/build/bootloader/boot_stage2.S	5efc2e395ce1d77d
