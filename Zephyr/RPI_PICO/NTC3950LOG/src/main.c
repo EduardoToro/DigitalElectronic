@@ -1,9 +1,8 @@
- //############## ADC #######################
-
 #include <inttypes.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <math.h>
+#include <stdio.h>
 
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
@@ -27,21 +26,20 @@ static const struct adc_dt_spec adc_channels[] = {
 };
 
 //Variable Declaration
-long R2 = 100000;
-long A = 0.7768951640E-3;
-long B = 2.068786810E-4;
-long C = 1.280087096E-7;
-long KELVINCONSTANT = 273.15;
+double R2 = 100000;
+double A = 0.7768951640E-3;
+double B = 2.068786810E-4;
+double C = 1.280087096E-7;
+double KELVINCONSTANT = 273.15;
 
 //Function Declaration
-long AdcToCelsius(uint32_t adcIn);
+double AdcToCelsius(uint32_t rawValue);
 
 void main(void)
 {
-	 //############## MAIN ADC #######################
 	int err;
 	uint16_t buf;
-	uint32_t prueba; 
+	uint32_t rawValue; 
 	struct adc_sequence sequence = {
 		.buffer = &buf,
 		.buffer_size = sizeof(buf),
@@ -62,10 +60,8 @@ void main(void)
 	}
 
 	while (1) {
-		//############# INIT ADC ####################
 		printk("ADC reading:\n");
 		for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
-			int32_t val_mv;
 
 			printk("- %s, channel %d: ",
 			       adc_channels[i].dev->name,
@@ -79,33 +75,22 @@ void main(void)
 				printk("Could not read (%d)\n", err);
 				continue;
 			} else {
-				printk("%"PRIu16, buf);
+				printk("RawValue %"PRIu16, buf);
 			}
 
-			prueba = buf; 
-			//Valor temperatura
-			long temp = AdcToCelsius(prueba);
-			printk(" = Temp %ld", temp);
-
-			/* conversion to mV may not be supported, skip if not */
-			val_mv = buf;
-			err = adc_raw_to_millivolts_dt(&adc_channels[i],
-						       &val_mv);
-			if (err < 0) {
-				printk(" (value in mV not available)\n");
-			} else {
-				printk(" = %"PRId32" mV\n", val_mv);
-			}
+			rawValue = buf; 
+			double tempC = AdcToCelsius(rawValue);
+			printf(" = Temperature %.2f\n", tempC);
+			k_sleep(K_MSEC(1000));
 		}
 		k_sleep(K_MSEC(1000));
 	}
 }
 
-long AdcToCelsius(uint32_t adcIn){ 
-    long resistanceNTC = (adcIn * R2) / (1234 - adcIn);
-    long logNTC = log(resistanceNTC); 
-    long temp = 1 / (A + (B * logNTC) + (C * logNTC * logNTC * logNTC)); 
-    temp = temp - KELVINCONSTANT; 
+double AdcToCelsius(uint32_t rawValue){ 
+    double resistanceNTC = (rawValue * R2) / (1234 - rawValue);
+    double logNTC = log(resistanceNTC); 
+    double temp = (1 / (A + (B * logNTC) + (C * logNTC * logNTC * logNTC))) - KELVINCONSTANT; 
 
     return temp; 
 }
