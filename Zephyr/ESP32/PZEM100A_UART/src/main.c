@@ -3,94 +3,106 @@
 #include <stdint.h>
 #include <math.h>
 #include <stdio.h>
+#include <string.h>
 
-#include <zephyr/device.h>
 #include <zephyr/devicetree.h>
-#include <zephyr/drivers/adc.h>
+#include <zephyr/device.h>
 #include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/uart.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/sys/util.h>
+/* change this to any other UART peripheral if desired */
+#define UART_DEVICE_NODE DT_CHOSEN(zephyr_shell_uart)
 
-#if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) || \
-	!DT_NODE_HAS_PROP(DT_PATH(zephyr_user), io_channels)
-#error "No suitable devicetree overlay specified"
-#endif
+#define MSG_SIZE 32
 
-#define DT_SPEC_AND_COMMA(node_id, prop, idx) \
-	ADC_DT_SPEC_GET_BY_IDX(node_id, idx),
+/* queue to store up to 10 messages (aligned to 4-byte boundary) */
+K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
 
-/* Data of ADC io-channels specified in devicetree. */
-static const struct adc_dt_spec adc_channels[] = {
-	DT_FOREACH_PROP_ELEM(DT_PATH(zephyr_user), io_channels,
-			     DT_SPEC_AND_COMMA)
-};
+static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
-//Variable Declaration
-double R2 = 100000;
-double A = 0.7768951640E-3;
-double B = 2.068786810E-4;
-double C = 1.280087096E-7;
-double KELVINCONSTANT = 273.15;
+/* receive buffer used in UART ISR callback */
+static char rx_buf[MSG_SIZE];
+static int rx_buf_pos;
 
-//Function Declaration
-double AdcToCelsius(uint32_t rawValue);
-
-void main(void)
+/*
+ * Read characters from UART until line end is detected. Afterwards push the
+ * data to the message queue.
+ */
+void serial_cb(const struct device *dev, void *user_data)
 {
-	int err;
-	uint16_t buf;
-	uint32_t rawValue; 
-	struct adc_sequence sequence = {
-		.buffer = &buf,
-		.buffer_size = sizeof(buf),
-	};
+	uint8_t c;
 
-	/* Configure channels individually prior to sampling. */
-	for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
-		if (!device_is_ready(adc_channels[i].dev)) {
-			printk("ADC controller device not ready\n");
-			return;
-		}
-
-		err = adc_channel_setup_dt(&adc_channels[i]);
-		if (err < 0) {
-			printk("Could not setup channel #%d (%d)\n", i, err);
-			return;
-		}
+	if (!uart_irq_update(uart_dev)) {
+		return;
 	}
 
-	while (1) {
-		printk("ADC reading:\n");
-		for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
+	if (!uart_irq_rx_ready(uart_dev)) {
+		return;
+	}
 
-			printk("- %s, channel %d: ",
-			       adc_channels[i].dev->name,
-			       adc_channels[i].channel_id);
+	/* read until FIFO empty */
+	while (uart_fifo_read(uart_dev, &c, 1) == 1) {
+		if ((c == '\n' || c == '\r') && rx_buf_pos > 0) {
+			/* terminate string */
+			rx_buf[rx_buf_pos] = '\0';
 
-			(void)adc_sequence_init_dt(&adc_channels[i], &sequence);
+			/* if queue is full, message is silently dropped */
+			k_msgq_put(&uart_msgq, &rx_buf, K_NO_WAIT);
 
-
-			err = adc_read(adc_channels[i].dev, &sequence);
-			if (err < 0) {
-				printk("Could not read (%d)\n", err);
-				continue;
-			} else {
-				printk("RawValue %"PRIu16, buf);
-			}
-
-			rawValue = buf; 
-			double tempC = AdcToCelsius(rawValue);
-			printf(" = Temperature %.2f\n", tempC);
-			k_sleep(K_MSEC(1000));
+			/* reset the buffer (it was copied to the msgq) */
+			rx_buf_pos = 0;
+		} else if (rx_buf_pos < (sizeof(rx_buf) - 1)) {
+			rx_buf[rx_buf_pos++] = c;
 		}
-		k_sleep(K_MSEC(1000));
+		/* else: characters beyond buffer size are dropped */
 	}
 }
 
-double AdcToCelsius(uint32_t rawValue){ 
-    double resistanceNTC = (rawValue * R2) / (4095 - rawValue);
-    double logNTC = log(resistanceNTC); 
-    double temp = (1 / (A + (B * logNTC) + (C * logNTC * logNTC * logNTC))) - KELVINCONSTANT; 
+/*
+ * Print a null-terminated string character by character to the UART interface
+ */
+void print_uart(char *buf)
+{
+	int msg_len = strlen(buf);
 
-    return temp; 
+	for (int i = 0; i < msg_len; i++) {
+		uart_poll_out(uart_dev, buf[i]);
+	}
+}
+
+void main(void)
+{
+	char tx_buf[MSG_SIZE];
+
+	if (!device_is_ready(uart_dev)) {
+		printk("UART device not found!");
+		return;
+	}
+
+	/* configure interrupt and callback to receive data */
+	int ret = uart_irq_callback_user_data_set(uart_dev, serial_cb, NULL);
+
+	if (ret < 0) {
+		if (ret == -ENOTSUP) {
+			printk("Interrupt-driven UART API support not enabled\n");
+		} else if (ret == -ENOSYS) {
+			printk("UART device does not support interrupt-driven API\n");
+		} else {
+			printk("Error setting UART callback: %d\n", ret);
+		}
+		return;
+	}
+	uart_irq_rx_enable(uart_dev);
+
+	print_uart("Hello! I'm your echo bot.\r\n");
+	print_uart("Tell me something and press enter:\r\n");
+
+	/* indefinitely wait for input from the user */
+	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
+		print_uart("Echo: ");
+		print_uart(tx_buf);
+		print_uart("\r\n");
+	}
 }
