@@ -12,10 +12,17 @@
 #include <zephyr/drivers/uart.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/sys/util.h>
-/* change this to any other UART peripheral if desired */
-#define UART_DEVICE_NODE DT_CHOSEN(zephyr_shell_uart)
 
-#define MSG_SIZE 32
+//Variable Declaration
+uint8_t cmd_read_voltage[] = {0xB0, 0xC0, 0xA8, 0x01, 0x01, 0x00, 0x1A};
+uint8_t cmd_read_current[] = {0xB1, 0xC0, 0xA8, 0x01, 0x01, 0x00, 0x1B};
+uint8_t rx_buf[8];
+float voltage, current; 
+
+/* change this to any other UART peripheral if desired */
+#define UART_DEVICE_NODE DT_ALIAS(uart0)
+
+#define MSG_SIZE 8
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
@@ -23,7 +30,7 @@ K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
 static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
 /* receive buffer used in UART ISR callback */
-static char rx_buf[MSG_SIZE];
+//static char rx_buf[MSG_SIZE];
 static int rx_buf_pos;
 
 /*
@@ -62,6 +69,7 @@ void serial_cb(const struct device *dev, void *user_data)
 
 /*
  * Print a null-terminated string character by character to the UART interface
+ * Envia datos de micro a sensor
  */
 void print_uart(char *buf)
 {
@@ -96,13 +104,32 @@ void main(void)
 	}
 	uart_irq_rx_enable(uart_dev);
 
-	print_uart("Hello! I'm your echo bot.\r\n");
-	print_uart("Tell me something and press enter:\r\n");
+	//print_uart("Hello! I'm your echo bot.\r\n");
+	//print_uart("Tell me something and press enter:\r\n");
+	
+	//printf("Command: %hhn", cmd_read_voltage);
 
-	/* indefinitely wait for input from the user */
-	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
-		print_uart("Echo: ");
-		print_uart(tx_buf);
-		print_uart("\r\n");
+	//while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
+	/*while (1) {
+		printk("Command: %hhn", cmd_read_voltage);
+		print_uart(cmd_read_voltage); 
+		k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER); 
+		printf("Voltage: %s", tx_buf);
+		printk("\r\n");
+	}*/
+
+	while (1)
+	{
+		uart_tx(uart_dev, cmd_read_voltage, sizeof(cmd_read_voltage), 1); 
+		uart_rx_enable(uart_dev, rx_buf, sizeof(rx_buf), 1000); 
+		//print_uart(rx_buf); 
+		printf("POS1: %d\n", rx_buf[1]); 
+		printf("POS2: %d\n", rx_buf[2]); 
+		printf("POS3: %d\n", rx_buf[3]); 
+		printf("POS4: %d\n", rx_buf[4]); 
+		voltage = (float)((rx_buf[3] << 8) | rx_buf[4]) / 10.0; 
+		printf(" Voltage: %.2f V\n", voltage); 
+
+		k_sleep(K_MSEC(1000));
 	}
 }
