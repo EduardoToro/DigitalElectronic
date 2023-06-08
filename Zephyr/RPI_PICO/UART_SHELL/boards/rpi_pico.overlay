@@ -1,0 +1,9 @@
+#include <zephyr/dt-bindings/adc/adc.h>
+#include "rpi_pico-pinctrl.dtsi"
+
+&uart0 {
+	current-speed = <9600>;
+	status = "okay";
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-names = "default";
+};

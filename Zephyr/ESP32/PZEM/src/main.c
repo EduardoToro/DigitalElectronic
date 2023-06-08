@@ -13,15 +13,15 @@
 #include <zephyr/sys/util.h>
 
 //Variable Declaration
-uint8_t cmd_read_voltage[] = {0xB0, 0xC0, 0xA8, 0x01, 0x01, 0x00, 0x1A};
+uint8_t cmd_read_voltage[] = {0xF8, 0x04, 0x00, 0x00, 0x00, 0x0A, 0x64, 0x64};
 uint8_t cmd_read_current[] = {0xB1, 0xC0, 0xA8, 0x01, 0x01, 0x00, 0x1B};
 uint8_t rx_buf[8];
 float voltage, current;
 
 /* change this to any other UART peripheral if desired */
-#define UART_DEVICE_NODE DT_ALIAS(uart0)
+#define UART_DEVICE_NODE_2 DT_ALIAS(uart2)
 
-static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
+static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE_2);
 
 void main(void)
 {

@@ -3,7 +3,7 @@ include $(PATH_TOOLS)/Makefile
 BOARD=rpi_pico
 DTS_OVERLAY=./boards/rpi_pico.overlay
 SERIAL=/dev/ttyUSB0
-FBAUD?=921600 # FBAUD: seleccionar velocidad en baudios para flashear esp32
+FBAUD?=921600 # FBAUD: seleccionar velocidad en baudios para flashear rpi_pico
 
 west-espressif:
 	west update
