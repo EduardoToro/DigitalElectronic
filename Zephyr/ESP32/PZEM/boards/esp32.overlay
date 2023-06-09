@@ -7,9 +7,15 @@
   	};
 }; 
 
+&uart0 {
+    compatible = "uart-esp32";
+    status = "okay";
+};
+
 &uart2 {
-	current-speed = <9600>;
+	compatible = "uart-esp32";
 	status = "okay";
+	current-speed = <9600>;
 	pinctrl-0 = <&uart2_default>;
 	pinctrl-names = "default";
 };

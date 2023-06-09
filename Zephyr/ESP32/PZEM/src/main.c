@@ -19,9 +19,9 @@ uint8_t rx_buf[8];
 float voltage, current;
 
 /* change this to any other UART peripheral if desired */
-#define UART_DEVICE_NODE_2 DT_ALIAS(uart2)
+#define UART_DEVICE_NODE DT_ALIAS(uart2)
 
-static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE_2);
+static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
 void main(void)
 {

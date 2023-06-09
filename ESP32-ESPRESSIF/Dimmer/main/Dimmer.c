@@ -1,18 +1,19 @@
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "esp_wifi.h"
 #include "nvs_flash.h"
 #include "protocol_examples_common.h"
 #include "esp_http_server.h"
 #include "driver/ledc.h"
 
+
 int32_t led_r = 0, led_g = 0, led_b = 0; 
 
 #define LEDC_TIMER  LEDC_TIMER_0
 #define LEDC_MODE   LEDC_HIGH_SPEED_MODE
-#define LEDC_OUTPUT_IO_R (15)
-#define LEDC_OUTPUT_IO_G (13)
-#define LEDC_OUTPUT_IO_B (12)
+#define LEDC_OUTPUT_IO_R (5)
+#define LEDC_OUTPUT_IO_G (18)
+#define LEDC_OUTPUT_IO_B (19)
 #define LEDC_CHANNEL_R LEDC_CHANNEL_0
 #define LEDC_CHANNEL_G LEDC_CHANNEL_1
 #define LEDC_CHANNEL_B LEDC_CHANNEL_2
@@ -156,5 +157,4 @@ void app_main(void)
 
         web_server_init(); 
     }
-
 }

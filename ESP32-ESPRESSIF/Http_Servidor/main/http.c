@@ -28,7 +28,7 @@ void web_server_init(){
         return; 
     }
     printf("Error al iniciar el servidor\n");
-};
+}
 
 void app_main(void)
 {
