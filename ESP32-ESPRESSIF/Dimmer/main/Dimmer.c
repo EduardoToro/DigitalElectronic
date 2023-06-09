@@ -34,7 +34,7 @@ static esp_err_t api_get_handler(httpd_req_t *req){
         buf = malloc(buf_len);
         if (httpd_req_get_url_query_str(req, buf, buf_len) == ESP_OK)
         {
-            char param[3]; 
+            char param[10]; 
             if (httpd_query_key_value(buf, "r", param, sizeof(param)) == ESP_OK)
             {
                 led_r = atoi(param);
