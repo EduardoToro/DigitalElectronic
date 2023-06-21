@@ -103,7 +103,7 @@ void main(void)
 
 	/* indefinitely wait for input from the user */
 	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
-		print_uart("Echo: ");
+		print_uart("Response: ");
 		print_uart(tx_buf);
 		print_uart("\r\n");
 	}

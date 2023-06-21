@@ -1,23 +1,19 @@
-#include <zephyr/dt-bindings/adc/adc.h>
-#include <espressif/esp32.dtsi>
-
-/{
-	aliases {
-		uart2 = &uart2; 
-		uart0 = &uart0; 
-  	};
-}; 
-
-&uart0 {
-		current-speed = <9600>;
-		status = "okay";
-		pinctrl-0 = <&uart0_default>;
-		pinctrl-names = "default";
+&pinctrl {
+	uart2_test: uart2_test {
+		group1 {
+			pinmux = <UART2_TX_GPIO17>;
+		};
+		group2 {
+			pinmux = <UART2_RX_GPIO16>;
+			bias-pull-up;
+		};
 	};
+};
 
-&uart2 {
-		current-speed = <9600>;
-		status = "okay";
-		pinctrl-0 = <&uart2_default>;
-		pinctrl-names = "default";
-	};
+dut: &uart2 {
+	status = "okay";
+	current-speed = <9600>;
+	pinctrl-0 = <&uart2_test>;
+	pinctrl-names = "default";
+};
+

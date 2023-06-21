@@ -11,6 +11,7 @@
 #include <zephyr/drivers/uart.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/sys/util.h>
+#include "test_uart.h"
 
 //Variable Declaration
 uint8_t cmd_read_voltage[] = {0xF8, 0x04, 0x00, 0x00, 0x00, 0x0A, 0x64, 0x64};
@@ -18,15 +19,15 @@ uint8_t rx_buf[25];
 float voltage, current;
 
 /* change this to any other UART peripheral if desired */
-#define UART_DEVICE_NODE DT_ALIAS(uart2)
+//#define UART_DEVICE_NODE DT_ALIAS(uart2_test)
 
-static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
+static const struct device *const uart_dev = DEVICE_DT_GET(UART_NODE);
 
-void main(void)
+int main(void)
 {
 	if (!device_is_ready(uart_dev)) {
 		printk("UART device not found!");
-		return;
+		return 0;
 	}
 
 	while (1)
@@ -60,4 +61,5 @@ void main(void)
 
 		k_sleep(K_MSEC(1000));
 	}
+	return 0;
 }
