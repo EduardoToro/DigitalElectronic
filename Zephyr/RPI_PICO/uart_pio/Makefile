@@ -1,5 +1,5 @@
 PATH_TOOLS=../tools
-include $(PATH_TOOLS)/esp32.mk
+include $(PATH_TOOLS)/rpi_pico.mk
 
 # Puede cambiar el valor de alguna variable
 # debe descomentar aquel que quiera modificar

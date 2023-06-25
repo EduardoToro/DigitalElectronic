@@ -1,0 +1,19 @@
+&pinctrl {
+	uart2_default: uart2_default {
+		group1 {
+			pinmux = <UART2_TX_GPIO17>;
+			output-high;
+		};
+		group2 {
+			pinmux = <UART2_RX_GPIO16>;
+			bias-pull-up;
+		};
+	};
+};
+
+uart_pzem: &uart2 {
+		current-speed = <9600>;
+		status = "okay";
+		pinctrl-0 = <&uart2_default>;
+		pinctrl-names = "default";
+	};
